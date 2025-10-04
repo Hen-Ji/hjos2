@@ -40,7 +40,7 @@
    }
    ```
 
-4. 在 hjosGlobal.h 中，导入全局头文件，需要包含以下数据类型：uint8_t, uint16_t uint32_t, uint64_t, int8_t, int16_t, int32_t, int64_t, size_t）
+4. 在 hjosGlobal.h 中，导入全局头文件，需要包含以下数据类型：uint8_t, uint16_t uint32_t, uint64_t, int8_t, int16_t, int32_t, int64_t, size_t
 
 5. 在 hjosPort.c 中，修改需要进行适配的函数
 
@@ -99,5 +99,6 @@ HJOS相关文件为：`hjos.h`, `hjos.c`, `hjosGlobal.h`, `hjosGlobal.c`, `hjosP
 - **hjosPort**
 
   HJOS针对不同类型的单片机实现的接口文件，比如临界区的进入与退出，第一个任务的启动，以及三个中断的中断服务程序。通过更改这些函数，可以在不同类型的单片机上进行移植
+
 
 此外，HJOS还依赖 **heap** 库，用于实现堆内存的动态分配和释放，用户可直接使用提供的 `heap.h`, `heap.c` 文件，也可仿照文件自行编写 `heapNew`, `heapDelete` 这两个函数提供给HJOS使用
