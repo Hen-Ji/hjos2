@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "w25q64.h": "c",
+        "global.h": "c",
+        "hjos.h": "c",
+        "stddef.h": "c",
+        "hjosport.h": "c",
+        "stm32f10x.h": "c"
+    }
+}
